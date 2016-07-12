@@ -25,7 +25,7 @@ Sitecore Diagnostics app the following files:
 
 ## License
 
-This patch is licensed under the [Sitecore Corporation A/S License](./LICENSE).
+This tool is licensed under the [Sitecore Corporation A/S License](./LICENSE).
 
 ## Download
 
