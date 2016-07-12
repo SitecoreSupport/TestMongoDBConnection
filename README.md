@@ -22,3 +22,11 @@ Sitecore Diagnostics app the following files:
 2. `\bin\MongoDB.Driver.dll`
 3. `\bin\TestMongoDBConnection.exe`
 4. `\bin\TestMongoDBConnection.exe.config`
+
+## License
+
+This patch is licensed under the [Sitecore Corporation A/S License](./LICENSE).
+
+## Download
+
+Downloads are available via [GitHub Releases](https://github.com/SitecoreSupport/TestMongoDBConnection/releases).
