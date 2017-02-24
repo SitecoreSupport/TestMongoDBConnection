@@ -38,8 +38,9 @@ namespace TestMongoDBConnection
       try
       {
         MongoClient client = new MongoClient(connectionString);
-
-        var versionString = client.GetServer().BuildInfo.VersionString;
+        var mongoServer = client.GetServer();
+        mongoServer.Connect();
+        var versionString = mongoServer.BuildInfo.VersionString;
 
         Log.AppendLine();
         Log.AppendLine($"MongoDB version: {versionString}.");
