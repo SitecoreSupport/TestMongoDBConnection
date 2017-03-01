@@ -3,6 +3,7 @@ using System;
 using System.Configuration;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Text;
 
 namespace TestMongoDBConnection
@@ -28,7 +29,7 @@ namespace TestMongoDBConnection
     }
 
     private static void TestConnectionString(string name, string connectionString)
-    {      
+    {
       Log.AppendLine();
       Log.AppendLine($"====== Test Date: {DateTime.Now.ToString(CultureInfo.InvariantCulture)} ======");
       Log.AppendLine();
@@ -40,10 +41,11 @@ namespace TestMongoDBConnection
         MongoClient client = new MongoClient(connectionString);
         var mongoServer = client.GetServer();
         mongoServer.Connect();
-        var versionString = mongoServer.BuildInfo.VersionString;
+        var buildInfos = mongoServer.Instances.Select(x => x.BuildInfo);
+        var versionStrings = buildInfos.Select(x => x.VersionString);
 
         Log.AppendLine();
-        Log.AppendLine($"MongoDB version: {versionString}.");
+        Log.AppendLine($"MongoDB version: {string.Join(" | ", versionStrings)}.");
         Log.AppendLine("Connect is successful.");
         Log.AppendLine();
       }
@@ -62,7 +64,7 @@ namespace TestMongoDBConnection
       using (StreamWriter writer = new StreamWriter(fileName))
       {
         writer.Write(log);
-      }       
+      }
     }
   }
 }
