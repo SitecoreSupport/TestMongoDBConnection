@@ -30,3 +30,5 @@ This tool is licensed under the [Sitecore Corporation A/S License](./LICENSE).
 ## Download
 
 Downloads are available via [GitHub Releases](https://github.com/SitecoreSupport/TestMongoDBConnection/releases).
+
+[![Total downloads](https://img.shields.io/github/downloads/SitecoreSupport/TestMongoDBConnection/total.svg)](https://github.com/SitecoreSupport/TestMongoDBConnection/releases)
