@@ -10,7 +10,13 @@ This repository contains Sitecore console app, which tests databases' connection
 
 To run the app, perform the following steps on both Content Managment (CM) and Content Delivery (CD) servers:
 
-1. In `\bin\TestMongoDBConnection.exe.config` the file, modify the `analytics`, `tracking.live`, `tracking.history` and `tracking.contact` MongoDB connecting strings.
+1. In the `\bin\TestMongoDBConnection.exe.config` file, modify the following connecting strings:
+
+   * `analytics`
+   * `tracking.live`
+   * `tracking.history`
+   * `tracking.contact`
+  
 2. Run the `\bin\TestMongoDBConnection.exe` file.
 
 > The log is saved into the `\bin\Sitecore.Log.{Data.Time}.txt` file.
