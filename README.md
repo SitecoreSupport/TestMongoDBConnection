@@ -1,13 +1,14 @@
 # Test MongoDB Connection
-A console application for testing connection to MongoDB instance.
+
+A console application for testing connection to a MongoDB instance.
 
 ## Main
 
-This repository contains Sitecore console application, which tests connecting to MongoDB databases using MongoDB Driver.
+This repository contains Sitecore console app, which tests databases' connections in MongoDB using MongoDB .NET\C# Driver.
 
 ## Deployment
 
-To run the app, perform the following steps on both CM and CD servers:
+To run the app, perform the following steps on both Content Managment (CM) and Content Delivery (CD) servers:
 
 1. In `\bin\TestMongoDBConnection.exe.config` the file, modify the `analytics`, `tracking.live`, `tracking.history` and `tracking.contact` MongoDB connecting strings.
 2. Run the `\bin\TestMongoDBConnection.exe` file.
@@ -16,7 +17,7 @@ To run the app, perform the following steps on both CM and CD servers:
 
 ## Content 
 
-Sitecore Diagnostics app the following files:
+Sitecore Diagnostics app includes the following files:
 
 1. `\bin\MongoDB.Bson.dll`
 2. `\bin\MongoDB.Driver.dll`
