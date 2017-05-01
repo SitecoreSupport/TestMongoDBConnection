@@ -3,13 +3,13 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Sitecore.Support.TestMongoDBConnection")]
 [assembly: AssemblyProduct("Sitecore.Support.TestMongoDBConnection")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: AssemblyInformationalVersion("1.0.0 rev. 160420")]
+[assembly: AssemblyVersion("1.1.0.0")]
+[assembly: AssemblyFileVersion("1.1.0.0")]
+[assembly: AssemblyInformationalVersion("1.1.0 rev. 170501")]
 
 [assembly: AssemblyDescription("Sitecore Support Diagnostics")]
 [assembly: AssemblyCompany("Sitecore Corporation")]
-[assembly: AssemblyCopyright("Copyright © 2016 Sitecore Corporation")]
+[assembly: AssemblyCopyright("Copyright © 2017 Sitecore Corporation")]
 [assembly: AssemblyTrademark("Sitecore® is a registered trademark of Sitecore Corporation")]
 [assembly: ComVisible(false)]
 
