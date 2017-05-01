@@ -40,8 +40,11 @@ namespace TestMongoDBConnection
       {
         MongoClient client = new MongoClient(connectionString);
         var mongoServer = client.GetServer();
+
+        // Because of https://jira.mongodb.org/browse/CSHARP-881
         mongoServer.Connect();
-        var buildInfos = mongoServer.Instances.Select(x => x.BuildInfo);
+
+        var buildInfos = mongoServer.Instances.Select(x => x.BuildInfo).Where(w => w != null);
         var versionStrings = buildInfos.Select(x => x.VersionString);
 
         Log.AppendLine();
